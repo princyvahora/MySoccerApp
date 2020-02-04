@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/add_team"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/add_team"
+        android:name="com.example.mysoccerapp.add_team_fragment"
+        android:label="fragment_add_team"
+        tools:layout="@layout/fragment_add_team" />
+</navigation>
