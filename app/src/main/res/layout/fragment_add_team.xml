@@ -8,12 +8,12 @@
     tools:context=".add_team_fragment">
 
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/addTeam_recycle_view"
-        android:layout_width="match_parent"
+        android:layout_width="403dp"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

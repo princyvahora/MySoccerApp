@@ -41,10 +41,5 @@
         android:name="com.example.mysoccerapp.playerlist_fragment"
         android:label="fragment_playerlist"
         tools:layout="@layout/fragment_playerlist" />
-    <fragment
-        android:id="@+id/played_matches"
-        android:name="com.example.mysoccerapp.played_matches"
-        android:label="fragment_played_matches"
-        tools:layout="@layout/fragment_played_matches" />
 
 </navigation>
