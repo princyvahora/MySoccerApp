@@ -27,7 +27,8 @@ public class Teams_adapter extends RecyclerView.Adapter<Teams_adapter.ViewHolder
     @Override
     public Teams_adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.addteam_recycle_item,parent,false);
+    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_recycle_item,parent,false);
+
 
         return new Teams_adapter.ViewHolder(view);
     }
@@ -67,6 +68,7 @@ public class Teams_adapter extends RecyclerView.Adapter<Teams_adapter.ViewHolder
             itemView.setTag(this);
 
             itemView.setOnClickListener(teamListener);
+
     }
 
 }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/team1_icon"
+            app:srcCompat="@drawable/user"
+            android:layout_width="81dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="28dp"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.343" />
+
+        <TextView
+            android:id="@+id/team1_name"
+            android:layout_width="131dp"
+            android:layout_height="40dp"
+            android:elevation="16dp"
+            android:padding="16dp"
+            android:text="Team1 Name"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="105dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/team2_icon"
+            android:layout_width="88dp"
+            android:layout_height="57dp"
+            app:srcCompat="@drawable/user"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="34dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/team2_name"
+            android:layout_width="131dp"
+            android:layout_height="49dp"
+            android:elevation="16dp"
+            android:padding="16dp"
+            android:text="Team2 Name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+        <TextView
+            android:id="@+id/VS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vs"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="59dp"
+            tools:ignore="MissingConstraints" />
+        <!--app:layout_constraintBottom_toBottomOf="@id/player_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" -->
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

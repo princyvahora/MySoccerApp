@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/add_team"
+    app:startDestination="@id/teamlist_league"
     tools:ignore="UnusedNavigation">
 
     <fragment
@@ -11,4 +11,40 @@
         android:name="com.example.mysoccerapp.add_team_fragment"
         android:label="fragment_add_team"
         tools:layout="@layout/fragment_add_team" />
+    <action
+        android:id="@+id/addteam_to_playerList"
+        app:destination="@id/teamlist_league" />
+
+    <fragment
+        android:id="@+id/remove_team"
+        android:name="com.example.mysoccerapp.remove_team_fragment"
+        android:label="fragment_remove_team"
+        tools:layout="@layout/fragment_remove_team" />
+    <action
+        android:id="@+id/removeteam_to_playerList"
+        app:destination="@id/add_team" />
+
+    <fragment
+        android:id="@+id/teamlist_league"
+        android:name="com.example.mysoccerapp.teamlist_league_fragment"
+        android:label="fragment_teamlist_league"
+        tools:layout="@layout/fragment_teamlist_league" />
+    <action
+        android:id="@+id/teamList_to_addteam"
+        app:destination="@id/add_team" />
+
+    <action
+        android:id="@+id/teamList_to_removeteam"
+        app:destination="@id/remove_team" />
+    <fragment
+        android:id="@+id/playerlist"
+        android:name="com.example.mysoccerapp.playerlist_fragment"
+        android:label="fragment_playerlist"
+        tools:layout="@layout/fragment_playerlist" />
+    <fragment
+        android:id="@+id/played_matches"
+        android:name="com.example.mysoccerapp.played_matches"
+        android:label="fragment_played_matches"
+        tools:layout="@layout/fragment_played_matches" />
+
 </navigation>

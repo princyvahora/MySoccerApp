@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".add_team_fragment">
+    tools:context=".remove_team_fragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/addTeam_recycle_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/removeTeam_recycle_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="363dp"
@@ -37,12 +37,12 @@
             android:layout_height="75dp">
 
             <Button
-                android:id="@+id/add_btn"
+                android:id="@+id/remove_btn"
                 android:layout_width="313dp"
                 android:layout_height="match_parent"
                 android:background="@color/royalblue"
                 android:gravity="center_vertical"
-                android:text="Add Team Into League"
+                android:text="Remove Team From League"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
